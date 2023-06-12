@@ -47,7 +47,7 @@ const createProduct = async (req, res, next) => {
 const getAllProducts = async (req, res, next) => {
   // return next(new ErrorHandler("This is my temp error", 500));
   // console.log("hi");
-  const resultPerPage = 8;
+  const resultPerPage = 16;
   const productCount = await Product.countDocuments();
   // console.log(req.query);
   const apiFeatured = new ApiFeatures(Product.find(), req.query)

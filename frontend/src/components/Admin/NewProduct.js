@@ -37,11 +37,11 @@ const NewProduct = () => {
   const categories = [
     "Laptop",
     "Footwear",
-    "Bottom",
+    "Trousers",
     "Tops",
-    "Attire",
-    "Camera",
-    "SmartPhones",
+    "Tshirts",
+    "Womenkurta",
+    "Smartphones",
   ];
 
   useEffect(() => {

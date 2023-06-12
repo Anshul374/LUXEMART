@@ -1,6 +1,5 @@
-
 .carousel_main_div{
-    width: 20vw;
+    width: 27vw;
     height: 100%;
 }
 .carousel_inner_div{
@@ -72,11 +71,12 @@
 
 @media screen and (max-width:600px) {
     .carousel_main_div{
-        height: 45vh;
-        width: 60vw ;
+        width: 100%;
+        height: 59vh;
     }
     .imgDiv > img{
-        object-fit: cover;
-        object-position: center;
+        object-fit:unset;
+        object-position:center center;
     }
+
 }

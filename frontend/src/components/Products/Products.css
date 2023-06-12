@@ -22,7 +22,7 @@
     order: 2;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 2.8vmax;
+    padding: 0 3vmax;
     justify-content: center;
     min-height: 48vh;
 }
@@ -192,6 +192,9 @@
         width: 65%;
         height: 3vmax;
         font-size: 1.6vmax;
+    }
+    .page-item{
+        padding: 1vmax 1.5vmax;
     }
 } 
 @media screen and (max-width:950px){

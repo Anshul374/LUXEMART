@@ -14,13 +14,13 @@ const Carousel = ({ slides, autoSlide, autoSlideInterval }) => {
   };
   //   console.log(slides);
 
-  useEffect(() => {
-    if (!autoSlide) {
-      return;
-    }
-    const slideInterval = setInterval(next, autoSlideInterval);
-    return () => clearInterval(slideInterval);
-  }, []);
+  // useEffect(() => {
+  //   if (!autoSlide) {
+  //     return;
+  //   }
+  //   const slideInterval = setInterval(next, autoSlideInterval);
+  //   return () => clearInterval(slideInterval);
+  // }, []);
   return (
     <div className="carousel_main_div">
       <div className="carousel_inner_div">

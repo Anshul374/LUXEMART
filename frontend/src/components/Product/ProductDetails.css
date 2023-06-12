@@ -1,5 +1,5 @@
 .ProductDetails{
-width: 70%;
+width: 80%;
 margin: auto;
 margin-top: 140px;
 display: flex;
@@ -120,6 +120,7 @@ justify-content:space-evenly;
     font: 500 1.2vmax sans-serif;
 }
 .detailsBlock-4 > p{
+    margin-top: 0.7vmax;
     color:rgba(0,0,0,0.534);
     font: 300 0.8vmax sans-serif;
 }
@@ -190,11 +191,11 @@ justify-content:space-evenly;
     }
     .ProductDetails > div:last-child{
         align-items: stretch;
-        width: 70vw;
-        height: 64vmax;
+        width: 100%;
+        min-height: 64vmax;
     }
     .detailsBlock-1 > h2{
-        font-size: 4vmax;
+        font-size: 3vmax;
         text-align: center;
     }
     .detailsBlock-1 > p{
@@ -249,18 +250,25 @@ justify-content:space-evenly;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 15vmax;
+        min-height: 15vmax;
         font: 500 2.5vmax sans-serif;
     }
     .detailsBlock-4 > p{
+        margin-top: 2vmax;
         font: 300 1.8vmax sans-serif;
     }
     .submitReview{
         font:500 1.7vmax "Roboto";
         padding: 1.2vmax;
         width: 18vmax;
-        margin: auto;
-        /* margin:3vmax 0; */
+        margin:3vmax auto 0vmax;
+        /* margin: auto; */
+    }
+    .reviewsHeading{
+        font-size: 2vmax;
+    }
+    .noReviews{
+        font-size: 1.7vmax;
     }
    
 }

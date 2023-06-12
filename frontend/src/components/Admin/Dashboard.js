@@ -129,10 +129,10 @@ const Dashboard = () => {
             </div>
           </div>
           {/* <h1>Anshul</h1> */}
-          <div className="lineChart dis">
+          <div className="lineChart disp">
             {products && <Line data={lineState} options={options} />}
           </div>
-          <div className="doughnutChart dis">
+          <div className="doughnutChart disp">
             {products && <Doughnut data={doughnutState} options={options} />}
           </div>
           {window.innerWidth < 600

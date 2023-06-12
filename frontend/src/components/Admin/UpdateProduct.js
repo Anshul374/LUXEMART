@@ -47,13 +47,13 @@ const UpdateProduct = () => {
   const categories = [
     "Laptop",
     "Footwear",
-    "Bottom",
+    "Trousers",
     "Tops",
-    "Attire",
-    "Camera",
-    "SmartPhones",
+    "Tshirts",
+    "Womenkurta",
+    "Smartphones",
   ];
-
+  // console.log(product.category);
   useEffect(() => {
     // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     if (!product || (product && product._id !== id)) {
@@ -154,11 +154,12 @@ const UpdateProduct = () => {
               </div>
               <div>
                 <AccountTreeIcon />
+                {console.log(category)}
                 <select
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}
                 >
-                  {/* <option value="">Choose Category</option> */}
+                  <option value="">{category}</option>
                   {categories.map((cat) => (
                     <option key={cat} value={cat}>
                       {cat}

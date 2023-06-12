@@ -23,11 +23,11 @@ const Products = () => {
   const categories = [
     "Laptop",
     "Footwear",
-    "Bottom",
+    "Trousers",
     "Tops",
-    "Attire",
-    "Camera",
-    "SmartPhones",
+    "Tshirts",
+    "Womenkurta",
+    "Smartphones",
   ];
 
   const [target, setTarget] = useState("");
@@ -174,7 +174,7 @@ const Products = () => {
                       key={category}
                       onClick={(e) => {
                         setTarget(e.target.innerText);
-                        setCategory(category.toLowerCase());
+                        setCategory(category);
                       }}
                     >
                       {category}
