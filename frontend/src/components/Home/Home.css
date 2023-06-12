@@ -1,0 +1,84 @@
+.cover_div{
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
+    height: 100vmin;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.cover_div > h1{
+    margin: 3vmax;
+    font:600 3vmax "Roboto";
+    text-align: center;
+}
+.cover_div > h1 > strong{
+    font-size: 6vmax;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.cover_div > p{
+    text-align: center;
+    margin-bottom: 4vmax;
+    font:300 2.2vmax "Lucida Sans";
+}
+.cover_div > a > button{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 1vmax;
+    transition:all 0.5s;
+    width: 9vmax;
+    font: 500 1vmax "Roboto";
+}
+.cover_div > a >button:hover{
+    background-color: rgba(255,255,255,0);
+    color: white;
+}
+
+.home_heading{
+    text-align: center;
+    font-family: "Roboto";
+    font-size:1.4vmax;
+    border-bottom: 1px solid rgba(21,21,21,0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: rgba(0,0,0,0.7);
+}
+.container{
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+    .cover_div{
+        height: 100vh;
+    }
+    .cover_div > h1{
+        font-size: 4vmax;
+
+    }
+    .cover_div > p{
+        font-size: 3vmax;
+        width: 80vw;
+    }
+    .cover_div > a > button{
+        width: 18vmax;
+        padding: 2vmax 0;
+        font-size: 2vmax;
+    }
+    .home_heading{
+        font-size: 2.5vmax;
+        width: 60vw;
+    }
+    .container{
+        width: 100%;
+    }
+}

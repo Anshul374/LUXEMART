@@ -1,0 +1,122 @@
+.contactMainDiv{
+    margin-top:81px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.contactMainDiv {
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+}
+.contactMainDiv > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vmax;
+}
+.contactMainDiv > div > img{
+    width: 25vmax;
+    height: 100%;
+}
+.contactMainDiv > div > h3{
+    display: none;
+}
+.rightDiv{
+    margin-left: 4vmax;
+
+}
+.contactMeDiv{
+    margin-bottom: 2vmax;
+}
+.contactMeDiv > h3{
+    font: 400 3.5vmax "Roboto";
+    margin-bottom: 2vmax;
+    color: rgb(41, 40, 40);
+}
+.contactMeDiv > p{
+    font: 400 1vmax "Roboto";
+    color:rgb(28, 28, 28);
+    line-height: 1.5;
+    text-align:justify;
+}
+.bestRegardsDiv{
+    margin-bottom: 2vmax;
+}
+.bestRegardsDiv > h4{
+    font: 400 2vmax "Roboto";
+    margin-bottom: 1.5vmax;
+    color: rgb(41, 40, 40);
+}
+/* .bestRegardsDiv > a{
+    color: tomato;
+} */
+.bestRegardsDiv > a > p{
+    font: 400 1vmax "Roboto";
+    color: rgb(118, 161, 214);
+    margin-bottom: 0.6vmax;
+}
+.bestRegardsDiv > p{
+    font: 400 1vmax "Roboto";
+    color:rgb(28, 28, 28);
+    margin-bottom: 0.6vmax;
+}
+.socialMediaDiv > h4{
+    font: 400 2vmax "Roboto";
+    margin-bottom: 1.5vmax;
+    color: rgb(41, 40, 40);
+}
+.socialMediaDiv > a > img{
+    width: 26px;
+    margin-right: 1vmax;
+    transition: all 0.5s;
+}
+.socialMediaDiv > a > img:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:600px) {
+    .contactMainDiv > div{
+        margin-top: 80px;
+        flex-direction: column;
+    }
+    .contactMainDiv > div > h3{
+        display: block;
+        margin-bottom: 3vmax;
+        font: 400 3.5vmax "Roboto";
+        color: rgb(41, 40, 40);
+    }
+    .contactMainDiv > div > img{
+        width: 100%;
+    }
+    .contactMeDiv > h3{
+        display:none;
+    }
+    .rightDiv{
+        margin: 0;
+    }
+    .contactMeDiv > p{
+        margin-top: 4vmax;
+        font-size: 2vmax;
+        text-align:justify;
+    }
+    .bestRegardsDiv > h4{
+        font-size: 3vmax;
+    }
+    .bestRegardsDiv > p{
+        font-size: 2vmax;
+        margin-bottom: 1.6vmax;
+    }
+    .bestRegardsDiv > a > p{
+        font-size: 2vmax;
+        margin-bottom: 1.6vmax;
+    }
+    .socialMediaDiv > h4{
+        font-size: 2.5vmax;
+    }
+    .socialMediaDiv > a > img{
+        margin-right: 2vmax;
+    }
+}

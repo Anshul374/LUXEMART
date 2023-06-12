@@ -1,0 +1,79 @@
+.cart_main_div{
+    width: 60vw;
+    margin: auto;
+    margin-top: 120px;
+    min-height: 30vh;
+}
+.cart_main_div > h4{
+    font: 400 1.5vmax "Roboto";
+    color: rgb(59, 59, 59);
+    text-align: center;
+}
+
+.line{
+    margin: 2vmax 0 4vmax;
+    border-bottom: 0.4px solid rgb(234, 232, 232);
+}
+
+.cItems_tamount{
+    margin-top: 1vmax;
+}
+.total_amount_div{
+    margin-top: 4vmax;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.4px solid rgb(233, 231, 231);
+}
+.total_amount_div > button{
+    width: 20vmax;
+    height: 3vmax;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    color: white;
+    font: 400 1.2vmax "Roboto";
+    border: none;
+    transition: all 0.5s;
+    margin-top: 2vmax;
+    cursor: pointer;
+}
+.total_amount_div > button:hover{
+    background-color: rgb(241, 58, 26);
+}
+.total_amount_top_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total_amount_top_div > h4{
+    padding:1vmax 1vmax 1vmax 0;
+}
+.total_amount_top_div > h4:first-child{
+    font: 400 1.3vmax "Roboto";
+}
+.total_amount_top_div > h4:last-child{
+    font: 400 1.3vmax "Roboto";
+    color: tomato;
+}
+
+@media screen and (max-width:600px) {
+    .cart_main_div{
+        width: 100%;
+    }
+    .cart_main_div > h4{
+        font: 400 3.5vmax "Roboto";
+    }
+    .total_amount_top_div > h4:first-child{
+        font-size: 2vmax;
+    }
+    .total_amount_top_div > h4:last-child{
+        font-size: 2vmax;
+    }
+    .total_amount_div > button{
+        width: 30vmax;
+        height: 4vmax;
+        font-size: 1.7vmax;
+    }
+}

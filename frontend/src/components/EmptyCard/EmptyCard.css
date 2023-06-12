@@ -1,0 +1,64 @@
+.empty-cart{
+    height: 80vh;
+    width: 100vw;
+    max-width: 100%;
+    margin:auto;
+    margin-top: 82px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: context-menu;
+}
+.empty-cart > svg{
+    width: 10vmax;
+    height: 10vmax;
+    color: tomato;
+}
+.empty-cart h3{
+    font:500 1.7vmax "Roboto";
+    margin:1vmax 0;
+}
+.empty-cart p{
+    font:400 1vmax "Roboto";
+    color: #8d8989;
+}
+.empty-cart button{
+    margin-top: 2em;
+    width: 18vmax;
+    height: 2.5vmax;
+    font: 550 1vmax "Roboto";
+    border:0.01px solid tomato;
+    color:tomato;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty-cart button:hover{
+    background-color:#f5e3e3;
+}
+
+@media screen and (max-width:600px) {
+    .empty-cart{
+        height: 60vh;
+    }
+    .empty-cart > svg{
+        width: 10vmax;
+        height: 10vmax;
+    }
+    .empty-cart h3{
+        margin: 3vmax 0 2vmax;
+        font:500 2.2vmax "Roboto";
+    }
+    .empty-cart p{
+        font:400 1.5vmax "Roboto";
+        color: #8d8989;
+    }
+    .empty-cart button{
+        margin-top: 3vmax;
+        width: 25vmax;
+        height: 4vmax;
+        font: 550 1.4vmax "Roboto";
+    }
+}

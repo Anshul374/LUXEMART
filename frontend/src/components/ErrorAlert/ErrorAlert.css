@@ -1,0 +1,84 @@
+.error_div{
+    min-width: 20vmax;
+    min-height: 4.5vmax;
+    position: fixed;
+    bottom: 0;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    animation-name: error;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+}
+.left_error_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 13.4vmax;
+    /* display: none; */
+}
+.left_error_div > p{
+    text-align: center;
+    margin: 0 0.7vmax;
+    color: white;
+    display: flex;
+    align-items: center;
+    font: 500 1.1vmax "Roboto";
+}
+.errorImg{
+    margin-left: 0.7vmax;
+    width: 1.7vmax;
+    height: 1.7vmax;
+}
+.closeImg{
+    margin-right: 0.7vmax;
+    width: 1.4vmax;
+    height: 1.4vmax;
+    /* display: none */
+}
+
+@keyframes error {
+    from{
+        bottom: -112px;
+    }
+    to{
+        bottom: 0;
+    }
+}
+
+.hideError{
+    display: none;
+}
+@keyframes errorHide {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: -112px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .error_div{
+        min-width: 30vmax;
+        min-height:7vmax ;
+    }
+    .left_error_div > p{
+        font-size: 1.4vmax;
+    }
+    .errorImg{
+        margin-left: 1vmax;
+        width: 2vmax;
+        height: 2vmax;
+    }
+    .closeImg{
+        margin-right: 1vmax;
+        width: 4vmax;
+        height: 3vmax;
+        /* display: none */
+    }
+}

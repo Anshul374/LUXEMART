@@ -1,0 +1,135 @@
+.cartItemCard{
+    padding: 1vmax;
+    border: 0.5px solid rgb(225, 224, 224);
+    border-radius: 6px;
+    margin-bottom: 1.5vmax;
+    position: relative;
+    transition: all 0.5s;
+}
+.cartItemCard:hover{
+    box-shadow: 0 0 5px rgba(15,15,15,0.26);
+    transform:translate(0vmax,-0.4vmax);
+}
+.cartItemCard_inner_div{
+    display: flex;
+    position: relative;
+}
+.citem_img{
+    width: 9vmax;
+    height: 13vmax;
+    margin-right: 1vmax;
+}
+.cartItemCard_inner_div > svg{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: rgb(23, 22, 22);
+    font-size: 1.5vmax;
+    cursor: pointer;
+}
+.cItemCard_inner_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cItemCard_inner_right > h4{
+    font: 500 1.4vmax "Roboto";
+    color: rgb(73, 73, 73);
+}
+.desc_p{
+    font: 400 1vmax "Roboto";
+    color:rgba(0,0,0,0.600);
+}
+.qty_div > h4{
+    color:rgb(73, 73, 73);
+}
+.qty_div > div{
+    margin-top: 0.5vmax;
+    display: flex;
+}
+.qty_div > div > button{
+    border: none;
+    /* background-color: rgba(0,0,0,0.616); */
+    background-color: tomato;
+    height: 1.8vmax;
+    width: 1.5vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+.qty_div > div > button:hover{
+    background-color: rgb(244, 48, 14);
+}
+.qty_div > div > input{
+    border: none;
+    padding: 0.5vmax;
+    width: 2vmax;
+    height: 2vmax;
+    text-align: center;
+    outline:none;
+    font: 400 0.8vmax "Roboto";
+    color: rgba(0,0,0,0.74);
+}
+.ratings_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2vmax;
+    background-color: rgba(244, 180, 168, 0.3);
+}
+.ratings_div > p{
+    font: 400 1.2vmax "Roboto";
+    margin-right: 0.2vmax;
+    color: black;
+}
+.ratings_div > svg{
+    font-size: 1.3vmax;
+    color: orange;
+}
+.price_div{
+    font: 400 1.2vmax "Roboto";
+    color: rgb(236, 130, 111);
+}
+
+@media screen and (max-width:600px) {
+    .citem_img{
+        width: 19vmax;
+        height: 23vmax;
+    }
+    .cartItemCard_inner_div > svg{
+        font-size: 3.1vmax;
+        color: rgb(83, 82, 82);
+    }
+    .cItemCard_inner_right > h4{
+        font-size: 3vmax;
+    }
+    .desc_p{
+        font-size: 1.4vmax;
+    }
+    .qty_div > div > button{
+        width: 3vmax;
+        height: 3vmax;
+        font: 400 2vmax "Roboto";
+    }
+    .qty_div > div > input{
+        width: 3.3vmax;
+        height: 3vmax;
+        font: 400 2vmax "Roboto";
+    }
+    .ratings_div{
+        width: 4vmax;
+    }
+    .ratings_div > p{
+        font-size: 2vmax;
+    }
+    .ratings_div > svg{
+        font-size: 2vmax;
+    }
+    .price_div{
+        font-size: 1.6vmax;
+    }
+
+}

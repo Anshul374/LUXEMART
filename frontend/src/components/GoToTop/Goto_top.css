@@ -1,0 +1,29 @@
+.top_btn{
+    position:fixed;
+    z-index: 4;
+    top: 88vh;
+    left: 93vw;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    background-color: #ffb94a;
+    visibility: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+}
+.top_btn img{
+    width:1.3em;
+    height: 1.3em;
+}
+.top_btn_show{
+    visibility: visible;
+}
+
+@media screen and (max-width:600px) {
+    .top_btn{
+        left:80vw;
+    }
+}

@@ -1,0 +1,84 @@
+.aboutMainDiv{
+    margin-top:81px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.innerDiv1{
+    padding: 2vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+    margin-top:5vmax
+}
+.innerDiv1 > div{
+    width:40vw;
+    
+}
+.innerDiv1 > div > h3{
+    font: 400 3.5vmax "Roboto";
+    margin-bottom: 2vmax;
+    color: rgb(41, 40, 40);
+}
+.innerDiv1 > div > p{
+    font: 400 1vmax "Roboto";
+    color:rgb(28, 28, 28);
+    line-height: 1.5;
+    /* text-align:justify; */
+}
+.innerDiv1 > img{
+    width: 20vmax;
+}
+
+.innerDiv4{
+    padding: 2vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+    margin-top: 10vmax;
+}
+    .linkInsta > p{
+        margin: 2vmax 0 1vmax;
+        font: 400 1.2vmax "Roboto";
+        color: rgb(34, 34, 34);
+    }
+    .linkInsta > div{
+        display: flex;
+    }
+    .linkInsta > div > a > img{
+        width: 26px;
+        margin-right: 1vmax;
+        transition: all 0.5s;
+    }
+    .linkInsta > div > a > img:hover{
+        transform: scale(1.2);
+    }
+
+    @media screen and (max-width:600px) {
+        .innerDiv1{
+            flex-direction: column-reverse;
+            width: 88vw;
+        }
+        .innerDiv1 > img{
+            order: 1;
+            width: 100%;
+        }
+        .innerDiv1 > div{
+            width: 100%;
+            margin-top: 2vmax;
+        }
+        .innerDiv1 > div > p{
+            font-size: 1.8vmax;
+            text-align: justify;
+        }
+        .linkInsta > p{
+            font-size: 1.7vmax;
+            font-weight: 500;
+        }
+    }

@@ -1,0 +1,30 @@
+.noPageDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noPageDiv > div > h3{
+    font: 500 2vmax "Roboto";
+    color: rgb(31, 30, 30);
+}
+.noPageDiv > div > img{
+    width: 16vmax;
+    height: 16vmax;
+}
+.noPageDiv > div > a{
+    width: 100%;
+    height: 3vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 400 1.1vmax "Roboto";
+    color: white;
+    background-color: tomato;
+    transition: all 0.5s;
+}
+.noPageDiv > div > a:hover{
+
+    background-color: rgb(245, 64, 32);
+}

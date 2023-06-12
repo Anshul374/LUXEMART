@@ -1,0 +1,106 @@
+.dashboard{
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.productListContainer{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255,255,255);
+    border-left: 1px solid rgba(0,0,0,0.158);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 81px;
+}
+#productListHeading{
+    font: 400 2rem "Roboto";
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.673);
+    transition: all 0.5s;
+    margin: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    padding: 2vmax 0;
+}
+.tableOuterDiv{
+    width: 80vw;
+    margin: auto;
+    height:80vh;
+    overflow-y:auto;
+}
+.tableOuterDiv::-webkit-scrollbar{
+    display: none;
+}
+.myOrdersPageTable{
+    background-color: white;
+    border-collapse: collapse;
+    width: 80vw;
+}
+.tableHeadingRow{
+    background-color: rgb(242, 141, 123);
+    position: sticky;
+    top: 0;
+}
+.tableHeadingRow > th{
+    padding:1vmax;
+    color: white;
+    font: 400 1.3vmax "Roboto";
+    border-right: 1px solid white;
+}
+
+.tableDataRow:hover{
+    background-color: rgb(251, 249, 249);
+}
+.tableDataRow > td{
+    border-top: 1px solid rgb(192, 189, 189);
+    text-align: center;
+    padding:1vmax;
+    font: 400 1.27vmax "Roboto";
+}
+.tableDataRow > td > a{
+    color: rgb(53, 52, 52);
+    margin-right: 1vmax;
+}
+.tableDataRow > td > a:hover{
+    color: tomato;
+}
+.tableDataRow > td:last-child > svg{
+    color:rgb(53, 52, 52) ;
+}
+.tableDataRow > td:last-child > svg:hover{
+    color: tomato;
+}
+.greenColor{
+    color: green;
+}
+.redColor{
+    color:red;
+}
+
+@media screen and (max-width:600px) {
+    .dashboard{
+        grid-template-columns: 1fr;
+    }
+    .productListContainer{
+     margin: 0;   
+    }
+    #productListHeading{
+        margin: 1rem;
+    }
+    .tableOuterDiv{
+        width: 80vw;
+        overflow: auto;
+    }
+    .qtyHead{
+        min-width:12vmax;
+    }
+    .tableHeadingRow > th{
+        font-size: 2vmax;
+    }
+    .tableDataRow > td{
+        font-size: 1.5vmax;
+    }
+    
+}

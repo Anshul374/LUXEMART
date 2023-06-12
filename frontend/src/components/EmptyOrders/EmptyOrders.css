@@ -1,0 +1,33 @@
+.emptyOrdersDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emptyOrdersDiv > div > h3{
+    margin-top: 80px;
+    font: 500 2.5vmax "Roboto";
+    color: rgb(59, 59, 59);
+    margin-bottom: 2vmax;
+    text-align: center;
+}
+.emptyOrdersDiv > div > img{
+    width: 15vmax;
+    height: 15vmax;
+    margin-bottom: 2vmax;
+}
+.emptyOrdersDiv > div > a{
+    width: 100%;
+    height: 3vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 400 1.1vmax "Roboto";
+    color: white;
+    background-color: tomato;
+    transition: all 0.5s;
+}
+.emptyOrdersDiv > div > a:hover{
+    background-color: rgb(245, 64, 32);
+}
