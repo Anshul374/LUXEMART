@@ -32,5 +32,5 @@ CLOUDINARY_API_SECRET
 
 ## Author
 
-**Instagram** Click [Here](https://www.instagram.com/anshul374/) **@meAbhiSingh**
-**Facebook** Click [Here](https://www.facebook.com/anshul.thakur.56829) **6 Pack Programmer**
+**Instagram** Click [Here](https://www.instagram.com/anshul374/) **anshul374**
+**Facebook** Click [Here](https://www.facebook.com/anshul.thakur.56829) **Anshul Thakur**
