@@ -62,12 +62,12 @@
 } 
 .profileContainer > div:last-child > div > h4{
     color: black;
-    font: 400 1.2vmax "Roboto";
+    font: 400 1.7vmax "Roboto";
 }
 .profileContainer > div:last-child > div > p{
     color: rgba(0,0,0,0.418);
-    margin: 0.2vmax;
-    font: 400 1vmax "Roboto";
+    margin-top: 0.5vmax;
+    font: 400 1.2vmax "Roboto";
 }
 .profileContainer > div:last-child > div:last-child{
     display: flex;

@@ -95,6 +95,7 @@ const getAllOrders = async (req, res, next) => {
 //Update order --Admin
 const updateOrder = async (req, res, next) => {
   try {
+    console.log(req.body, req.params);
     const order = await Order.findById(req.params.id);
     if (!order) {
       return next(new ErrorHandler("Order not found with this id", 404));

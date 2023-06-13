@@ -135,7 +135,7 @@ const forgotPassword = async (req, res, next) => {
   try {
     await sendEmail({
       email: user.email,
-      subject: `Ecommerce Password Recovery`,
+      subject: `Luxemart Password Recovery`,
       message,
     });
     res.status(200).send({
