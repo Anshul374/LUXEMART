@@ -10,6 +10,7 @@ import { LOGIN_CLEAR_ERRORS, login } from "../../features/user/userLoginSlice";
 import {
   register,
   REGISTER_CLEAR_ERRORS,
+  REGISTER_CLEAR_USER,
 } from "../../features/user/userRegisterSlice";
 import {
   CLEAR_ERRORS,
@@ -95,6 +96,11 @@ const LoginSignUp = () => {
     if (errorL) {
       setTimeout(() => {
         dispatch(LOGIN_CLEAR_ERRORS());
+      }, 3000);
+    }
+    if (userR.message) {
+      setTimeout(() => {
+        dispatch(REGISTER_CLEAR_USER());
       }, 3000);
     }
     if (errorR) {

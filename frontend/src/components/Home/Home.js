@@ -38,7 +38,7 @@ const Home = () => {
         <Loading />
       ) : (
         <>
-          <Metadata title="ECOMMERCE" />
+          <Metadata title="LUXEMART" />
           {/* <div className="cover_div">
             <h1>
               Welcome to <strong>LUXEMART</strong>

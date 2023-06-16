@@ -218,7 +218,7 @@ const getProductReviews = async (req, res, next) => {
 
 const deleteReview = async (req, res, next) => {
   try {
-    // console.log(req.query.productId, req.query.id);
+    console.log(req.query.productId, req.query.id);
     const product = await Product.findById(req.query.productId);
 
     if (!product) {

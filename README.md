@@ -30,6 +30,9 @@ CLOUDINARY_API_KEY
 CLOUDINARY_API_SECRET
 \_fill each filed with your info respectively*
 
+Steps:-
+1.Goto - /ECOMMERCE2 2. npm install **to install nodemodules for backend** 3. cd frontend 4. npm install **to install nodemodules for frontend** 5. npm start 6. cd .. 7. cd backend 8. node server or nnodemon server
+
 ## Author
 
 **Instagram** Click [Here](https://www.instagram.com/anshul374/) **anshul374**
